@@ -132,4 +132,5 @@ Basic pipeline validations are included to ensure:
 * Add schema validation using Pandera
 * Add unit tests for indicator math
 * Store outputs in Parquet format
+
 * Integrate with a data warehouse (BigQuery / Redshift)
