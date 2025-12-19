@@ -71,21 +71,18 @@ fam-data-engineering-assignment/
 
 Simple Moving Average (SMA)
 
-[
-SMA_N = \frac{1}{N} \sum_{i=1}^{N} Close_i
-]
+SMA is calculated as the arithmetic mean of closing prices over N periods.
+
+SMA_N = (Close_1 + Close_2 + ... + Close_N) / N
 
 Exponential Moving Average (EMA)
 
-[
-EMA_t = (Price_t - EMA_{t-1}) \times \alpha + EMA_{t-1}
-]
 
-Where:
+EMA assigns higher weight to recent prices using a smoothing factor.
 
-[
-\alpha = \frac{2}{N + 1}
-]
+alpha = 2 / (N + 1)
+
+EMA_t = (Price_t - EMA_(t-1)) * alpha + EMA_(t-1)
 
 ▶️ How to Run
 
@@ -122,3 +119,4 @@ Basic pipeline validations are included to ensure:
 * Store outputs in Parquet format
 
 * Integrate with a data warehouse (BigQuery / Redshift)
+
