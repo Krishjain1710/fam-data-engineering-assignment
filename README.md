@@ -134,3 +134,4 @@ Basic pipeline validations are included to ensure:
 * Store outputs in Parquet format
 
 * Integrate with a data warehouse (BigQuery / Redshift)
+
